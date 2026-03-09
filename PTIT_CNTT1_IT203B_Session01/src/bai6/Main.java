@@ -10,25 +10,18 @@ public class Main {
 
         System.out.print("Nhập tên người dùng: ");
         String name = sc.nextLine();
-
-        // Defensive Programming
         if(name == null || name.trim().isEmpty()){
             System.out.println("Tên không hợp lệ");
             return;
         }
-
         try{
-
             User user = new User(name);
 
             if(user != null){
                 System.out.println("Tên người dùng: " + user.getName());
             }
-
         }catch(IllegalArgumentException e){
-
             Logger.logError("Dữ liệu không hợp lệ: " + e.getMessage());
-
         }
     }
 }
