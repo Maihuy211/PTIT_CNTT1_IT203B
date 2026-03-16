@@ -2,27 +2,36 @@ package kha2;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         TicketPool roomA = new TicketPool("A", 10);
         TicketPool roomB = new TicketPool("B", 10);
 
-        BookingCounter c1 = new BookingCounter("Quầy 1", roomA, roomB);
-        BookingCounter c2 = new BookingCounter("Quầy 2", roomA, roomB);
+        TicketCounter counter1 = new TicketCounter("Quầy 1", roomA);
+        TicketCounter counter2 = new TicketCounter("Quầy 2", roomB);
 
-        Thread t1 = new Thread(c1);
-        Thread t2 = new Thread(c2);
-
+        TicketSupplier supplier = new TicketSupplier(
+                roomA,
+                roomB,
+                3,
+                3000,
+                3
+        );
+        Thread t1 = new Thread(counter1);
+        Thread t2 = new Thread(counter2);
+        Thread t3 = new Thread(supplier);
         t1.start();
         t2.start();
-
-        t1.join();
-        t2.join();
-
+        t3.start();
+        try {
+            t1.join();
+            t2.join();
+            t3.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println("Kết thúc chương trình");
-        System.out.println("Quầy 1 bán: " + c1.getSoldCount());
-        System.out.println("Quầy 2 bán: " + c2.getSoldCount());
-        System.out.println("Vé còn phòng A: " + roomA.remainingTickets());
-        System.out.println("Vé còn phòng B: " + roomB.remainingTickets());
+        System.out.println("Vé còn lại phòng A: " + roomA.getRemainingTickets());
+        System.out.println("Vé còn lại phòng B: " + roomB.getRemainingTickets());
     }
 }

@@ -1,4 +1,4 @@
-package kha1;
+package kha2;
 
 public class TicketCounter implements Runnable {
     private String counterName;

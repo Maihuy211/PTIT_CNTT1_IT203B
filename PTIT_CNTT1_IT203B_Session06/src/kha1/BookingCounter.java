@@ -1,4 +1,4 @@
-package kha2;
+package kha1;
 
 import java.util.Random;
 

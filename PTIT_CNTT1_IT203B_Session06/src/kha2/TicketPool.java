@@ -1,35 +1,39 @@
 package kha2;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class TicketPool {
-    private String roomName;
-    private List<Ticket> tickets;
-    public TicketPool(String roomName, int total) {
-        this.roomName = roomName;
-        tickets = new ArrayList<>();
 
-        for (int i = 1; i <= total; i++) {
-            tickets.add(new Ticket(roomName + "-" + i, roomName));
+    private Queue<Ticket> tickets;
+    private String roomName;
+    private int counter;
+
+    public TicketPool(String roomName, int initialTickets) {
+        this.roomName = roomName;
+        this.tickets = new LinkedList<>();
+        this.counter = 1;
+
+        for (int i = 0; i < initialTickets; i++) {
+            tickets.add(new Ticket(roomName + "-" + counter++));
         }
     }
+
     public synchronized Ticket sellTicket() {
-        for (Ticket t : tickets) {
-            if (!t.isSold()) {
-                t.setSold(true);
-                return t;
-            }
-        }
-        return null;
+        return tickets.poll();
     }
-    public int remainingTickets() {
-        int count = 0;
-        for (Ticket t : tickets) {
-            if (!t.isSold()) {
-                count++;
-            }
+
+    public synchronized void addTickets(int count) {
+        for (int i = 0; i < count; i++) {
+            tickets.add(new Ticket(roomName + "-" + counter++));
         }
-        return count;
+    }
+
+    public int getRemainingTickets() {
+        return tickets.size();
+    }
+
+    public String getRoomName() {
+        return roomName;
     }
 }

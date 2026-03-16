@@ -1,37 +1,11 @@
 package kha2;
 
 public class Ticket {
-    private String ticketId;
-    private String roomName;
-    private boolean isSold;
-
-    public Ticket(String ticketId, String roomName) {
-        this.ticketId = ticketId;
-        this.roomName = roomName;
-        this.isSold = isSold;
+    private String id;
+    public Ticket(String id) {
+        this.id = id;
     }
-
-    public String getTicketId() {
-        return ticketId;
-    }
-
-    public void setTicketId(String ticketId) {
-        this.ticketId = ticketId;
-    }
-
-    public String getRoomName() {
-        return roomName;
-    }
-
-    public void setRoomName(String roomName) {
-        this.roomName = roomName;
-    }
-
-    public boolean isSold() {
-        return isSold;
-    }
-
-    public void setSold(boolean sold) {
-        isSold = sold;
+    public String getId() {
+        return id;
     }
 }
