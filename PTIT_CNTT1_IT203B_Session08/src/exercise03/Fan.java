@@ -1,0 +1,19 @@
+package exercise03;
+
+public class Fan {
+    private boolean isOn = false;
+
+    public void turnOn() {
+        isOn = true;
+        System.out.println("Quat: Bat");
+    }
+
+    public void turnOff() {
+        isOn = false;
+        System.out.println("Quat: Tat");
+    }
+
+    public boolean isOn() {
+        return isOn;
+    }
+}

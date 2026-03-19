@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.traffic.simulator.app.pattern.state.TrafficLightStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-18T05:13:12.880Z" hostname="JACKPOT" time="0.092">
+  <properties/>
+  <testcase name="shouldCycleGreenYellowRedWithoutRealSleep()" classname="com.traffic.simulator.app.pattern.state.TrafficLightStateTest" time="0.092"/>
+  <system-out><![CDATA[Green light → Cars are allowed
+Switch status: YELLOW
+Yellow light → Prepare to stop
+Switch status: RED
+Red light → Cars must stop
+Switch status: GREEN
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

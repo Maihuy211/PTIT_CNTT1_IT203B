@@ -1,0 +1,6 @@
+"Green light → Cars are allowed
+Switch status: YELLOW
+"Yellow light → Prepare to stop
+Switch status: RED
+Red light → Cars must stop
+Switch status: GREEN

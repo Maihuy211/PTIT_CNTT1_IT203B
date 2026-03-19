@@ -4,6 +4,27 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Baiktrthuchanhss09" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Baiktrthuchanhss09" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/MiniProejcetJavaAndvancedss09" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/MiniProejcetJavaAndvancedss09" />
+            <option value="$PROJECT_DIR$/MiniProejcetJavaAndvancedss09/src" />
+            <option value="$PROJECT_DIR$/MiniProejcetJavaAndvancedss09/src/main" />
+            <option value="$PROJECT_DIR$/MiniProejcetJavaAndvancedss09/src/main/esources" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/PTIT_CNTT1_IT203B_Session05" />
         <option name="gradleHome" value="" />
         <option name="modules">
@@ -18,6 +39,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/PTIT_CNTT1_IT203B_Session04" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ktrthuchanhss09" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ktrthuchanhss09" />
           </set>
         </option>
       </GradleProjectSettings>
