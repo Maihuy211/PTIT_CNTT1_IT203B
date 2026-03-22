@@ -1,7 +1,5 @@
 package com.traffic.simulator.app;
 
-import com.traffic.simulator.app.engine.SimulationEngine;
-
 public class Main {
     public static void main(String[] args) {
 
