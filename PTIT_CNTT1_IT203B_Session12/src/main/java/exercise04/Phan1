@@ -1,0 +1,4 @@
+Việc thực thi cùng một câu lệnh SQL 1.000 lần
+nhưng không tái sử dụng khiến
+Database phải parse và tạo execution plan lặp lại
+1.000 lần, gây lãng phí CPU và làm giảm hiệu năng hệ thống.

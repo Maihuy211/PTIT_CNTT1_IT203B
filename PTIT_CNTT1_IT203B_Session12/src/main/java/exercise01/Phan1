@@ -1,0 +1,8 @@
+PreparedStatement được coi là “tấm khiên” chống SQL Injection vì:
+
+Dùng dấu ? thay vì nối chuỗi SQL
+Tách riêng câu lệnh SQL và dữ liệu đầu vào
+SQL được biên dịch trước (pre-compiled) nên cấu trúc câu lệnh không bị thay đổi
+
+=> Vì vậy, dữ liệu người dùng nhập vào (kể cả ' OR '1'='1) chỉ
+được coi là giá trị, không thể biến thành lệnh SQL độc hại.

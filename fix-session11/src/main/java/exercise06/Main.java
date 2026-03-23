@@ -9,11 +9,8 @@ public class Main {
 
         AppointmentRepository repo = new AppointmentRepository();
         Scanner sc = new Scanner(System.in);
-
         int choice;
-
         do {
-            System.out.println("\n===== MENU =====");
             System.out.println("1. Them lich kham");
             System.out.println("2. Cap nhat lich kham");
             System.out.println("3. Xoa lich kham");

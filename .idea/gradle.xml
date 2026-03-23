@@ -43,6 +43,15 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/PTIT_CNTT1_IT203B_Session12" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/PTIT_CNTT1_IT203B_Session12" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/PTIT_CNTT1_IT203B_session04" />
         <option name="gradleHome" value="" />
         <option name="modules">

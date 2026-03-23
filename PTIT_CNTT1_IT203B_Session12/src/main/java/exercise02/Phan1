@@ -1,0 +1,3 @@
+setDouble() và setInt() truyền dữ liệu trực tiếp theo kiểu số (binary) thay vì chuỗi,
+nên không bị ảnh hưởng bởi định dạng dấu . hay , của hệ điều hành.
+Nhờ đó tránh lỗi cú pháp SQL khi xử lý số thực
