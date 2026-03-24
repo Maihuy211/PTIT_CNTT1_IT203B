@@ -1,4 +1,4 @@
-package exercise04.database;
+package exercise03.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
