@@ -1,0 +1,2 @@
+Cần registerOutParameter() trước để JDBC biết kiểu dữ liệu OUT và nhận giá trị trả về.
+Kiểu DECIMAL trong SQL → dùng Types.DECIMAL trong Java.

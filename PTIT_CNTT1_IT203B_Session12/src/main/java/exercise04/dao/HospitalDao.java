@@ -1,6 +1,6 @@
 package exercise04.dao;
 
-import exercise06.database.DBConnect;
+import exercise04.database.DBConnect;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

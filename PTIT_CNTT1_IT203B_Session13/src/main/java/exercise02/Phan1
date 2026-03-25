@@ -1,0 +1,9 @@
+Khi dùng setAutoCommit(false) -> dữ liệu chưa commit ngay
+Nếu xảy ra lỗi mà không rollback:
+Transaction bị treo (dang dở)
+Connection giữ trạng thái chưa hoàn tất
+Có thể gây lock dữ liệu / lỗi hệ thống
+
+lỗi Chỉ System.out.println() mà không xử lý DB
+
+thiếu rollback() (hủy giao dịch khi lỗi)

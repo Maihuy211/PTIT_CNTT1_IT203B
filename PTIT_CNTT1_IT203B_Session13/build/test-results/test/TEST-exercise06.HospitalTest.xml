@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="exercise06.HospitalTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-03-25T16:18:34.680Z" hostname="ACER" time="0.69">
+  <properties/>
+  <testcase name="testXuatVienFail()" classname="exercise06.HospitalTest" time="0.616"/>
+  <testcase name="testXuatVienSuccess()" classname="exercise06.HospitalTest" time="0.07"/>
+  <system-out><![CDATA[Xuất viện thành công
+Lỗi: Không tìm thấy giường
+Xuất viện thất bại
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

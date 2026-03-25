@@ -1,6 +1,6 @@
 package exercise05.dao;
 
-import exercise06.database.DBConnect;
+import exercise05.database.DBConnect;
 import exercise05.model.Patients;
 
 import java.sql.Connection;

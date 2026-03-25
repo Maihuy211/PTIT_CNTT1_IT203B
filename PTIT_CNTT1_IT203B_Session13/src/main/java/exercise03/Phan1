@@ -1,0 +1,30 @@
+1. Phân tích bài toán (Input / Output)
+Input:
+
+maBenhNhan (int)
+tienVienPhi (double)
+
+Output:
+
+Thành công: xuất viện và thanh toán thành công
+Thất bại: không đủ tiền, không tồn tại dữ liệu hoặc lỗi hệ thống (rollback)
+
+2. Đề xuất giải pháp
+Sử dụng transaction trong JDBC bằng cách tắt autoCommit.
+Đặt toàn bộ các câu lệnh trong try-catch.
+Nếu tất cả thành công thì commit.
+Nếu có lỗi hoặc dữ liệu không hợp lệ thì throw exception và rollback.
+
+3. Thiết kế các bước xử lý
+
+Mở kết nối
+Tắt autoCommit
+Lấy số dư bệnh nhân
+Kiểm tra đủ tiền, nếu không thì báo lỗi
+Trừ tiền
+Cập nhật trạng thái giường
+Cập nhật trạng thái bệnh nhân
+Kiểm tra số dòng bị ảnh hưởng
+Nếu tất cả đúng thì commit
+Nếu có lỗi thì rollback
+Đóng kết nối

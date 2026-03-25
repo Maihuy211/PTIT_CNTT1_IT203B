@@ -1,0 +1,14 @@
+mặc định Auto-Commit = true
+Mỗi câu lệnh executeUpdate() sẽ:
+-> tự động commit ngay lập tức
+
+Luồng chạy của code:
+Trừ thuốc trong kho (UPDATE) → commit ngay
+Xảy ra lỗi (10 / 0) → chương trình dừng
+Câu INSERT không chạy
+
+Kết quả:
+
+Thuốc đã bị trừ (vì đã commit)
+Không có lịch sử (vì chưa chạy)
+->  Mất tính Atomicity Transaction không toàn vẹn
